@@ -27,7 +27,7 @@ project/
 
 1. **Clonar el Repositorio:**
 
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/AI-School-F5-P3/Leire_Teleco.git
    cd tu_repositorio
    
 
