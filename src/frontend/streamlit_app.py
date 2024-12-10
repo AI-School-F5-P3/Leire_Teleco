@@ -8,8 +8,9 @@ import sys
 # Añadir el directorio src al path
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
+print(sys.path)
 
-from src.utils.visualization import plot_feature_importance
+from utils.visualization import plot_feature_importance
 from src.utils.metrics import calculate_model_metrics
 
 def main():
