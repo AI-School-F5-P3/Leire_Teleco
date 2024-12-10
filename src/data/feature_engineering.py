@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
@@ -26,19 +27,32 @@ def calculate_vif(data, numeric_cols, threshold=10):
 if __name__ == "__main__":
     input_path = "../data/processed/data_prepared.csv"
     output_path = "../data/processed/data_combined_vif.csv"
+    results_dir = "../results"  # Directorio donde se guardará el análisis de VIF
+
+    # Asegurarse de que la carpeta results existe
+    os.makedirs(results_dir, exist_ok=True)
 
     # Cargar datos
+    print(f"Cargando datos desde {input_path}")
     data = pd.read_csv(input_path)
 
     # Crear variables combinadas
+    print("Creando variables combinadas...")
     data = combine_features(data)
 
     # Calcular y filtrar VIF
     numeric_cols = data.select_dtypes(include=["float64", "int64"]).columns.tolist()
+    print(f"Columnas numéricas seleccionadas: {numeric_cols}")
     data_cleaned, vif_table = calculate_vif(data, numeric_cols)
 
     # Guardar resultados
+    print(f"Guardando datos procesados en {output_path}")
     data_cleaned.to_csv(output_path, index=False)
-    vif_table.to_csv("../results/vif_analysis.csv", index=False)
-    print(f"Datos procesados guardados en {output_path}")
+
+    vif_output_path = os.path.join(results_dir, "vif_analysis.csv")
+    print(f"Guardando análisis de VIF en {vif_output_path}")
+    vif_table.to_csv(vif_output_path, index=False)
+
+    print(f"Proceso completado. Datos procesados guardados en {output_path} y VIF en {vif_output_path}")
+
 

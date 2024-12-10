@@ -6,60 +6,23 @@
 
 ## 🛠️ Estructura del Proyecto
 
-
 project/
 │
-├── data/
-│   ├── raw/                  # Datos crudos
-│   │   └── dataset.csv       
-│   └── processed/            # Datos procesados y divididos
-│       ├── data_cleaned.csv  
-│       ├── data_combined.csv
-│       └── data_split.csv
+├── data/                     # Todos nuestros datos viven aquí
+│   ├── raw/                 # Datos sin procesar
+│   └── processed/           # Datos listos para el modelado
 │
-├── src/
-│   ├── data/                 # Preprocesamiento y división
-│   │   ├── prepare_data.py
-│   │   ├── feature_engineering.py
-│   │   └── split_data.py
-│   ├── models/               # Modelos y evaluación
-│   │   ├── train_models.py
-│   │   ├── evaluate_models.py
-│   │   ├── hyperparameter_tuning.py
-│   │   ├── ensemble_models.py
-│   │   └── cross_validation.py
-│   ├── utils/                # Utilidades generales
-│   │   ├── visualization.py
-│   │   ├── metrics.py
-│   │   └── data_drift.py
-│   ├── api/                  # Implementación de API
-│   │   └── app.py
-│   └── monitoring/           # Monitoreo de producción
-│       └── monitor_model.py
+├── src/                      # El corazón de nuestro código
+│   ├── data/                # Scripts de procesamiento de datos
+│   ├── models/              # Implementación de modelos
+│   ├── utils/               # Herramientas útiles
+│   ├── api/                 # Nuestra API
+│   └── frontend/            # Interfaz de usuario
 │
-├── notebooks/                # Exploración inicial
-│   └── exploratory_data_analysis.ipynb
-│
+├── notebooks/                # Análisis exploratorio
 ├── tests/                    # Pruebas unitarias
-│   ├── test_data.py
-│   ├── test_models.py
-│   └── test_api.py
-│
-├── mlruns/                   # Tracking de experimentos con MLflow
-│
-├── config/                   # Configuraciones generales
-│   └── model_config.yaml
-│
-├── results/                  # Informes y visualizaciones
-│   ├── performance_reports/
-│   └── visualizations/
-│
-├── docs/                     # Documentación adicional
-│
-├── requirements.txt          # Dependencias
-├── Dockerfile                # Contenerización
-├── README.md                 # Este archivo
-└── main.py                   # Orquestador principal
+├── results/                  # Resultados y visualizaciones
+└── docs/                     # Documentación
 ```
 
 ---
@@ -83,49 +46,20 @@ project/
    pip install -r requirements.txt
 
 
-4. **(Opcional) Configurar MLflow:**
-   Asegúrate de que MLflow esté configurado para tracking de experimentos:
-   
-   mlflow ui
+
 
 
 ---
 
 ## 🚀 Cómo Usar
 
-### 1. **Preprocesar los Datos:**
-   
-   python src/data/prepare_data.py
-   
+1.Procesa los datos y entrena los modelos:
 
-### 2. **Ingeniería de Características:**
-   
-   python src/data/feature_engineering.py
+python3 main.py
 
-### 3. **Dividir los Datos:**
-   
-   python src/data/split_data.py
+2.Inicia la aplicación:
 
-
-### 4. **Entrenar el Modelo:**
-   
-   python src/models/train_models.py
-
-### 5. **Evaluar el Modelo:**
-
-   python src/models/evaluate_models.py
-
-
-### 6. **Optimizar Hiperparámetros:**
-   
-   python src/models/hyperparameter_tuning.py
-
-
-### 7. **Exponer el Modelo en una API:**
-
-   uvicorn src.api.app:app --reload
-
-
+python3 run.py
 ---
 
 ## 🧪 Funcionalidades Principales

@@ -1,0 +1,17 @@
+RESULTADOS DE OPTIMIZACIÓN DE HIPERPARÁMETROS
+===========================================
+
+Logistic Regression
+-----------------
+Mejores hiperparámetros: {'C': 0.051815908074005115, 'solver': 'saga', 'max_iter': 833}
+Mejor puntuación: 0.3970
+
+Random Forest
+------------
+Mejores hiperparámetros: {'n_estimators': 173, 'max_depth': 5, 'min_samples_split': 15}
+Mejor puntuación: 0.3793
+
+Gradient Boosting
+----------------
+Mejores hiperparámetros: {'n_estimators': 242, 'learning_rate': 0.03, 'max_depth': 8}
+Mejor puntuación: 0.3825

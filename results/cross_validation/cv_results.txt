@@ -1,0 +1,6 @@
+Resultados de Validación Cruzada - Random Forest
+=============================================
+Número de folds: 5
+Puntajes individuales: 0.3034, 0.3181, 0.4372, 0.3514, 0.3721
+Puntaje promedio: 0.3564
+Desviación estándar: 0.0471
