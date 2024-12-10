@@ -1,0 +1,39 @@
+# Dependencias básicas de Python
+numpy>=1.21.0          # Computación numérica
+pandas>=1.3.0          # Manipulación de datos
+scikit-learn>=1.0.2    # Modelos de machine learning
+joblib>=1.1.0          # Serialización de modelos
+
+# Visualización
+matplotlib>=3.4.0      # Gráficos básicos
+seaborn>=0.11.0        # Visualizaciones estadísticas
+plotly>=5.3.0          # Gráficos interactivos
+
+# API y Frontend
+fastapi>=0.68.0        # Framework API
+uvicorn>=0.15.0        # Servidor ASGI
+streamlit>=1.12.0      # Interface de usuario
+requests>=2.26.0       # Cliente HTTP
+
+# Procesamiento de datos
+scipy>=1.7.0           # Computación científica
+category_encoders>=2.3.0  # Codificación de variables categóricas
+
+# Optimización y validación
+optuna>=2.10.0         # Optimización de hiperparámetros
+pytest>=6.2.5          # Testing
+
+# Utilidades de desarrollo
+python-dotenv>=0.19.0  # Variables de entorno
+pyyaml>=5.4.1          # Manejo de archivos YAML
+black>=21.7b0          # Formateo de código
+flake8>=3.9.0          # Linting de código
+
+# Documentación y notebooks
+jupyter>=1.0.0         # Notebooks
+ipykernel>=6.0.0       # Kernel para Jupyter
+nbformat>=5.1.3        # Formato de notebooks
+
+# MLOps y monitoreo
+mlflow>=1.20.0         # Tracking de experimentos
+great-expectations>=0.13.0  # Validación de datos
