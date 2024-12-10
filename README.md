@@ -136,7 +136,5 @@ Consulta la carpeta `docs/` para información técnica detallada sobre cada comp
 
 ---
 
-## 📝 Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
