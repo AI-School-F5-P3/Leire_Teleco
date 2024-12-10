@@ -3,6 +3,7 @@
 ¡Bienvenido a este proyecto de Machine Learning! Este repositorio contiene el desarrollo completo de un modelo de clasificación multiclase, desde el preprocesamiento de datos hasta la implementación del modelo entrenado en una API. Aquí encontrarás herramientas para analizar, entrenar, evaluar y monitorear modelos de forma eficiente. 🚀
 
 ---
+```plaintext
 project/
 │
 ├── data/                     # Todos nuestros datos viven aquí
@@ -20,8 +21,7 @@ project/
 ├── tests/                    # Pruebas unitarias
 ├── results/                  # Resultados y visualizaciones
 └── docs/                     # Documentación
-
----
+```
 
 ## ⚙️ Instalación y Configuración
 
